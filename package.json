@@ -1,0 +1,31 @@
+{
+  "name": "blueprint-wp",
+  "version": "1.0.0",
+	"slug": "blueprint-wp",
+	"prefix": "blueprintwp",
+	"textdomain": "blueprintwp",
+	"css_min_suffix": ".min",
+	"cmb2": true,
+	"private": false,
+  "description": "A boilerplate for your WordPress Theme development",
+	"theme_uri": "https://thijsmoens.co/projects/blueprint-wp",
+	"author": "Thijs Moens",
+	"author_uri": "https://thijsmoens.co",
+	"license": "GPL-3.0",
+	"copyright": "Copyright (c) 2021 Thijs Moens",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thijsmoensdev/blueprint-wp.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme-development",
+    "gulp",
+    "nodejs",
+    "npm"
+  ],
+  "bugs": {
+    "url": "https://github.com/thijsmoensdev/blueprint-wp/issues"
+  },
+  "homepage": "https://github.com/thijsmoensdev/blueprint-wp#readme"
+}
