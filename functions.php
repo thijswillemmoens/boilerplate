@@ -13,7 +13,6 @@
  * @link https://thijsmoens.co
  */
 
-
 /**
  * Define all constants.
  */
@@ -25,6 +24,32 @@ define( 'BLUEPRINT_WP_THEME_PARENT_PATH',  trailingslashit( get_parent_theme_fil
 define( 'BLUEPRINT_WP_CSS', trailingslashit( get_stylesheet_directory() ) );
 define( 'BLUEPRINT_WP_CSS_URI', trailingslashit( get_stylesheet_directory_uri() ) );
 define( 'BLUEPRINT_WP_THEME_VERSION', '1.0.0' );
+
+
+/**
+ * Check for debug mode
+ */
+if ( ! defined( 'BLUEPRINT_WP_DEBUG' ) ) :
+	/**
+	 * Check to see if development mode is active.
+	 * If set to false, the theme will load un-minified assets.
+	 */
+	define( 'BLUEPRINT_WP_DEBUG', true );
+endif;
+
+if ( ! defined( 'BLUEPRINT_WP_ASSET_SUFFIX' ) ) :
+	/**
+	 * If not set to true, let's serve minified .css and .js assets.
+	 * Don't modify this, unless you know what you're doing!
+	 */
+	if ( ! defined( 'BLUEPRINT_WP_DEBUG' ) || true === BLUEPRINT_WP_DEBUG ) {
+		define( 'BLUEPRINT_WP_ASSET_SUFFIX', null );
+	} else {
+		define( 'BLUEPRINT_WP_ASSET_SUFFIX', '.min' );
+	}
+endif;
+
+
 
 /* ***************************** LOAD CORE FUNCTIONS *************************** */
 

@@ -10,3 +10,57 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: @@pkg.textdomain
 Tags: one-column, custom-colors, grid-layout, editor-style, custom-logo, custom-colors, custom-menu, featured-images, theme-options, translation-ready, blog, photography
 */
+
+
+/*--------------------------------------------------------------
+TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Alignments
+# Media
+	## Captions
+	## Galleries
+# Accessibility
+# Forms
+# Navigation
+	## Links
+	## Menus
+	## Pagination
+	## Cart
+	## Search
+	## Mobile
+	## Social
+# Layouts
+	## Main
+	## Header
+	## Footer
+	## Blogroll
+	## Search
+# Content
+	## Posts and Pages
+	## Comments
+# 404
+# Widgets
+# Infinite scroll
+# Animations
+# Cross Browser
+*/
+
+// Variables
+@import "variables";
+
+// Mixins
+@import "mixins";
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base";
