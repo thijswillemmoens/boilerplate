@@ -44,7 +44,7 @@ var customJSWatchFiles	  			= ['./assets/js/custom/**/*.js', '!_dist/assets/js/c
 var projectPHPWatchFiles			= ['./**/*.php', '!_dist', '!_dist/**', '!_dist/**/*.php', '!_demo', '!_demo/**','!_demo/**/*.php'];
 
 // Build.
-var distBuildFiles		            = ['./**', '!_dist', '!_dist/**', '!inc/admin/gulp', '!inc/admin/gulp/**', '!node_modules/**', '!*.json', '!*.map', '!*.xml', '!gulpfile.js', '!.vscode/*', '', '!*.log', '!*.DS_Store', '!*.gitignore', '!TODO', '!*.git', '!*.ftppass', '!*.DS_Store', '!yarn.lock', '!package.lock'];
+var distBuildFiles		            = ['./**', '!_dist', '!_dist/**', '!inc/admin/gulp', '!DEV_DOCS.md', '!inc/admin/gulp/**', '!node_modules/**', '!*.json', '!*.map', '!*.xml', '!gulpfile.js', '!.vscode/*', '!*.log', '!*.DS_Store', '!*.gitignore', '!TODO', '!*.git', '!*.ftppass', '!*.DS_Store', '!yarn.lock', '!package.lock'];
 var distDestination		            = './_dist/';
 var distCleanFiles		            = ['./_dist/'+slug+'/', './_dist/'+slug+'.zip' ];
 
