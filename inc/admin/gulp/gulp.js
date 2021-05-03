@@ -36,6 +36,12 @@ var jsCustomFile		            = 'custom';
 var imagesSRC			            = './assets/images/source/**/*.{png,jpg,gif,svg}';
 var imagesDestination	  	        = './assets/images/';
 
+// BrowserSync.
+var styleWatchFiles	  				= ['./scss/**/*.scss', '!/scss/_gutenberg.scss' ];
+var vendorJSWatchFiles	  			= './assets/js/vendors/**/*.js';
+var customJSWatchFiles	  			= ['./assets/js/custom/**/*.js', '!_dist/assets/js/custom/**/*.js', '!_demo/assets/js/custom/**/*.js' ];
+var projectPHPWatchFiles			= ['./**/*.php', '!_dist', '!_dist/**', '!_dist/**/*.php', '!_demo', '!_demo/**','!_demo/**/*.php'];
+
 // Build.
 var distBuildFiles		            = ['./**', '!_dist', '!_dist/**', '!_demo', '!_demo/**', '!inc/admin/gulp', '!inc/admin/gulp/**', '!node_modules/**', '!*.json', '!*.map', '!*.xml', '!gulpfile.js', '!*.sublime-project', '!*.sublime-workspace', '!*.sublime-gulp.cache', '!*.log', '!*.DS_Store', '!*.gitignore', '!TODO', '!*.git', '!*.ftppass', '!*.DS_Store', '!yarn.lock', '!package.lock'];
 var distDestination		            = './_dist/';
@@ -44,6 +50,21 @@ var distCleanFiles		            = ['./_dist/'+slug+'/', './_dist/'+slug+'-packag
 // Build /slug/ contents within the _dist folder
 var themeDestination		        = './_dist/'+slug+'/';
 var themeBuildFiles		            = './_dist/'+slug+'/**/*';
+
+// Browsers you care about for autoprefixing. https://github.com/ai/browserslist
+const AUTOPREFIXER_BROWSERS = [
+	'last 2 version',
+	'> 1%',
+	'ie >= 9',
+	'ie_mob >= 10',
+	'ff >= 30',
+	'chrome >= 34',
+	'safari >= 7',
+	'opera >= 23',
+	'ios >= 7',
+	'android >= 4',
+	'bb >= 10'
+];
 
 
 /**
@@ -67,6 +88,10 @@ var sourcemaps   	                = require('gulp-sourcemaps');
 var copy		                    = require('gulp-copy');
 var open	  	                    = require('gulp-open');
 var notify	   	                    = require('gulp-notify');
+var replace	  						= require('gulp-replace-task');
+var lineec	   						= require('gulp-line-ending-corrector');
+var filter	   						= require('gulp-filter');
+var rename	   						= require('gulp-rename');
 
 
 
@@ -226,7 +251,7 @@ gulp.task( 'styles', function(done) {
 	.pipe( gulp.dest( './' ) )
 
 	// Minify.
-	.pipe( rename( { suffix: css_suffix } ) )
+	// .pipe( rename( { suffix: css_suffix } ) )
 	.pipe( minifycss() )
 	.pipe( lineec() )
 	.pipe( gulp.dest( styleDestination ) )

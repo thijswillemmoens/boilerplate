@@ -17,7 +17,10 @@
 - Gulp copy, Copy source files to new destination and use that destination as new source
 - Gulp open, Open files and URLs with gulp
 - Gulp notify, Gulp plugin to send messages
-
+- Gulp replace task, A string replace plugin for gulp
+- Gulp line ending corrector, A utility that makes sure your files have consistent line endings
+- Gulp filter, Filter files in a `vinyl` stream
+- Gulp rename, Rename files
 
 
 ### Other
