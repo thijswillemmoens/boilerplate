@@ -8,14 +8,14 @@
   "cmb2": true,
   "private": false,
   "description": "A boilerplate for your WordPress Theme development",
-  "theme_uri": "https://thijsmoens.co/projects/blueprint-wp",
+  "theme_uri": "https://raketwetenschap.com/projects/blueprint-wp",
   "author": "Thijs Moens",
-  "author_uri": "https://thijsmoens.co",
+  "author_uri": "https://raketwetenschap.com",
   "license": "GPL-3.0",
   "copyright": "Copyright (c) 2021 Thijs Moens",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thijsmoensdev/blueprint-wp.git"
+    "url": "git+https://github.com/thijswillemmoens/blueprint-wp.git"
   },
   "keywords": [
     "wordpress",
@@ -25,9 +25,9 @@
     "npm"
   ],
   "bugs": {
-    "url": "https://github.com/thijsmoensdev/blueprint-wp/issues"
+    "url": "https://github.com/thijswillemmoens/blueprint-wp/issues"
   },
-  "homepage": "https://github.com/thijsmoensdev/blueprint-wp#readme",
+  "homepage": "https://github.com/thijswillemmoens/blueprint-wp#readme",
   "dependencies": {
     "@barba/core": "^2.9.7"
   },

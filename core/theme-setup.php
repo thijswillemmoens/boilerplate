@@ -11,8 +11,8 @@
  * @package BLUEPRINT_WP
  * @subpackage Core
  * @since 1.0.0
- * @author Thijs Moens <thijs@thijsmoens.co>
- * @link https://thijsmoens.co
+ * @author Thijs Moens <hello@raketwetenschap.com>
+ * @link https://raketwetenschap.com
  */
 
 /**
